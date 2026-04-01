@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="greeting">
+        <p id="greeting-text">Hello!</p>
+      </div>
+
+      <div class="profile-header">
+        <h1>Chaitanya Dhayade</h1>
+        <p class="tagline">Aspiring Developer · Nashik, India</p>
+      </div>
+
+      <div class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with a keen interest in AI and automation. I love coding and always strive to improve my skills.</p>
+      </div>
+
+      <div class="interests">
+        <h2>My Interests</h2>
+        <div class="tags">
+          <span>AI & Automation</span>
+          <span>Vibe Coding</span>
+          <span>Gaming</span>
+          <span>Web series and Movies</span>
+        </div>
+      </div>
+
+      <div class="goal">
+        <h2>My Goal</h2>
+        <p>I want to become a skilled developer proficient in AI and automation, contributing to innovative projects that make a positive impact.</p>
+      </div>
+
+      <div class="skills">
+        <h2>Skills in progress</h2>
+
+        <div class="skill-item">
+          <div class="skill-top">
+            <span>HTML</span>
+            <span id="html-val">40%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="html-fill" style="width: 40%"></div>
+          </div>
+          <button class="skill-btn" onclick="increaseSkill('html')">+ I practised today</button>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-top">
+            <span>CSS</span>
+            <span id="css-val">30%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="css-fill" style="width: 30%"></div>
+          </div>
+          <button class="skill-btn" onclick="increaseSkill('css')">+ I practised today</button>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-top">
+            <span>Python</span>
+            <span id="python-val">20%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="python-fill" style="width: 20%"></div>
+          </div>
+          <button class="skill-btn" onclick="increaseSkill('python')">+ I practised today</button>
+        </div>
+      </div>
+
+      <div class="theme-toggle">
+        <button id="theme-btn" onclick="toggleTheme()">Switch to dark mode</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
